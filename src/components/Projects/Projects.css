@@ -1,0 +1,7 @@
+.Projects {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 55px 50px 25px 50px;
+  background-color: #333333;
+  height: 450px;
+}

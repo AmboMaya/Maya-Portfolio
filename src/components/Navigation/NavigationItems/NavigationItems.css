@@ -1,0 +1,15 @@
+.NavigationItems {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: flex-end;
+    font-family: Raleway, monospace;
+}
+
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
+}
