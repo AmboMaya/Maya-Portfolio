@@ -18,6 +18,16 @@ class App extends Component {
         <Experience />
         <Footer />
       </div>
+      //when use code below only some components render to the page
+      // <Router>
+      // <div className={classes.App}>
+      //     <Route path='/' component={Layout} />
+      //     <Route path='#/aboutme' component={AboutMe} />
+      //     <Route path='#/projects' component={Project} />
+      //     <Route path='#/experience' component={Experience} />
+      //   <Footer />
+      // </div>
+      // </Router>
     )
   }
 }
