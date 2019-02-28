@@ -1,0 +1,9 @@
+.footer div.socialIcons {
+  background-color: #40A4C8;
+}
+
+ul.navFooter a:hover {
+  background-color: #262628;
+  color: #40A4C8;
+  border: 0 solid #262628;
+}
