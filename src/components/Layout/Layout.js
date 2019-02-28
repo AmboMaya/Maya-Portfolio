@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // import classes from './Layout.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
-import LandingPage from './LandingPage/LandingPage';
+import IntroPage from './IntroPage/IntroPage';
 
 class Layout extends Component {
 
@@ -10,7 +10,7 @@ class Layout extends Component {
         return (
             <React.Fragment>
                 <Toolbar/>
-                <LandingPage />
+                <IntroPage />
             </React.Fragment>
         )
     }

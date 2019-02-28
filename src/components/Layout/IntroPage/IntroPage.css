@@ -1,4 +1,4 @@
-.LandingPage {
+.IntroPage {
   height: 100vh;
   background-image: linear-gradient(
     rgba(20, 20, 20, 0.365), 
@@ -13,7 +13,7 @@
   padding-top: 5%;
   font-family: 'Varela Round', sans-serif;
 }
-.LandingPage p {
+.IntroPage p {
   padding-top: 40px;
   font-weight: 50;
   font-size: 1.5em;

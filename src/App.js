@@ -4,7 +4,7 @@ import AboutMe from './components/AboutMe/AboutMe'
 import Experience from './components/Experience/Experience'
 import Project from './components/Projects/Projects'
 import Footer from './components/Navigation/Footer/Footer';
-import LandingPage from './components/Layout/LandingPage/LandingPage';
+import IntroPage from './components/Layout/IntroPage/IntroPage';
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className={classes.App}>
         <Toolbar />   
-        <LandingPage />
+        <IntroPage />
         <AboutMe />
         <Project />
         <Experience />
