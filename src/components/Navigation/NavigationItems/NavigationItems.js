@@ -1,15 +1,17 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import classes from './NavigationItems.css'
-import NavigationItem from './NavigationItem/NavigationItem'
+import LandingPage from '../../Layout/LandingPage/LandingPage'
+import Experience from '../../Experience/Experience'
+import AboutMe from '../../AboutMe/AboutMe';
 
-const navigationItems = () => (
-    <ul className={classes.NavigationItems}>
-        <NavigationItem link="/">Home</NavigationItem>
-        <NavigationItem link="/">Projects</NavigationItem>
-        <NavigationItem link="/">About</NavigationItem>
-        <NavigationItem link="/">Resume</NavigationItem>
+const NavigationItems = () => (
+    <ul className={`${classes.NavigationItems} navFooter`}>
+        <Link component={LandingPage} to={"/"}>Home</Link>     
+        <Link component={Experience} to="/experience">Experience</Link>
+        <Link component={AboutMe} to="/aboutme">About Me</Link>
+        <Link component={Experience} to="/portfolio">Portfolio</Link>
     </ul>
 );
 
-export default navigationItems
+export default NavigationItems
