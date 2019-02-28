@@ -3,7 +3,7 @@ import AboutMe from './components/AboutMe'
 import Experience from './components/Experience/Experience'
 import Project from './components/Projects'
 import Footer from './components/Navigation/Footer/Footer';
-import IntroPage from './components/Layout/IntroPage/IntroPage';
+import IntroPage from './components/Layout/IntroPage';
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
 
 class App extends Component {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './NavigationItems.css'
-import IntroPage from '../../Layout/IntroPage/IntroPage'
+import IntroPage from '../../Layout/IntroPage'
 import Experience from '../../Experience/Experience'
 import AboutMe from '../../AboutMe';
 
