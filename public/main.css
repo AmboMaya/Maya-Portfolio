@@ -1,3 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.5em;
+  
+}
+
+.content {
+  padding-top: 15vh;
+}
+
+.app {
+  text-align: center;
+}
+
+.app button {
+  padding: 16px;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+.app button:hover {
+  color: black;
+}
+
+.projects {
+display: flex;
+flex-wrap: nowrap;
+padding: 55px 50px 25px 50px;
+background-color: #333333;
+height: 450px;
+}
+
+.aboutMe {
+  background-color: #ffffff;
+  color: #666666;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  font-weight: normal;
+}
+
+.introPage {
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(20, 20, 20, 0.365), 
+    rgba(20,20,20, .7)), url("./images/background.JPG");
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5em;  
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 5%;
+  font-family: 'Varela Round', sans-serif;
+}
+.introPage p {
+  padding-top: 40px;
+  font-weight: 50;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.socialMediaIcons {
+  padding-top: 240px;
+}
+
+div.socialMediaIcons > span {
+  margin-left: 25px;
+}
+
 .footer div.socialIcons {
   background-color: #40A4C8;
 }

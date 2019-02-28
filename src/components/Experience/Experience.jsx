@@ -10,6 +10,21 @@ const styles = theme => ({
   }
 });
 
+// const experiences = [
+//   {
+//     technologies : {
+//     dayToDay : ['HTML5 / CSS3', 'JavaScript / jQuery', 'Version Control ( GIT )', 'Responsive Layout and Design', 'Mobile First Thinking', 'Cross-Browser Compatibility'],
+//     experience : ['React.js', 'Node.js', 'Sqlite DB', 'Firebase DB', 'Express']
+//   },
+//     workExperience : {
+//       company: {
+        
+//       }
+//     }
+//   }
+// ]
+
+
 const Experience = (props) => {
   return (
     <React.Fragment>

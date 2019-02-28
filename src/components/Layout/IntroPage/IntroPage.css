@@ -1,4 +1,4 @@
-.IntroPage {
+/* .introPage {
   height: 100vh;
   background-image: linear-gradient(
     rgba(20, 20, 20, 0.365), 
@@ -13,14 +13,9 @@
   padding-top: 5%;
   font-family: 'Varela Round', sans-serif;
 }
-.IntroPage p {
+.introPage p {
   padding-top: 40px;
   font-weight: 50;
   font-size: 1.5em;
   line-height: 1.5em;
-}
-
-a:link, a:hover, a:active, a:visited{
-  color: white;
-  text-decoration: none;
-}
+} */

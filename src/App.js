@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import classes from './App.css'
-import AboutMe from './components/AboutMe/AboutMe'
+import AboutMe from './components/AboutMe'
 import Experience from './components/Experience/Experience'
-import Project from './components/Projects/Projects'
+import Project from './components/Projects'
 import Footer from './components/Navigation/Footer/Footer';
 import IntroPage from './components/Layout/IntroPage/IntroPage';
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
@@ -10,7 +9,7 @@ import Toolbar from './components/Navigation/Toolbar/Toolbar';
 class App extends Component {
   render () {
     return (
-      <div className={classes.App}>
+      <div className='app'>
         <Toolbar />   
         <IntroPage />
         <AboutMe />

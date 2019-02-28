@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import classes from './NavigationItems.css'
 import IntroPage from '../../Layout/IntroPage/IntroPage'
 import Experience from '../../Experience/Experience'
-import AboutMe from '../../AboutMe/AboutMe';
+import AboutMe from '../../AboutMe';
 
 const NavigationItems = () => (
     <ul className={`${classes.NavigationItems} navFooter`}>

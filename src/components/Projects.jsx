@@ -1,6 +1,5 @@
 import React from 'react';
-import Placeholder from '../Layout/Placeholder/Placeholder';
-import classes from "./Projects.css"
+import Placeholder from './Layout/Placeholder/Placeholder';
 
 const projects = [
   {
@@ -20,10 +19,10 @@ const projects = [
   }
 ]
 
-const Projects = (props) => {
+const Projects = () => {
   return (
     <React.Fragment>
-      <div className={classes.Projects}>
+      <div className='projects'>
         {projects.map(project => (
           <Placeholder key={project.title} title={project.title} image={project.image} description={project.projectDescription}/>
         ))}

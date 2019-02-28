@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-
-// import classes from './Layout.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import IntroPage from './IntroPage/IntroPage';
 
