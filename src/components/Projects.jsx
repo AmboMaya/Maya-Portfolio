@@ -1,5 +1,5 @@
 import React from 'react';
-import Placeholder from './Layout/Placeholder/Placeholder';
+import Placeholder from './Layout/Placeholder';
 
 const projects = [
   {

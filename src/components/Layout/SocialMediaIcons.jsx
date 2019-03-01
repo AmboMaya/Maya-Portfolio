@@ -1,8 +1,7 @@
 import React from 'react'
-import classes from './SocialMediaIcons.css'
 
 const SocialMediaIcons = () => (
-  <div className={`${classes.SocialMediaIcons} socialIcons`}>
+  <div className='socialMediaIcons'>
     <span>
       <a href="https://github.com/AmboMaya"><i className="fab fa-github-alt fa-2x"></i></a>
     </span>

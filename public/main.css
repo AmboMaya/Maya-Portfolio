@@ -13,10 +13,6 @@ body {
   
 }
 
-.content {
-  padding-top: 15vh;
-}
-
 .app {
   text-align: center;
 }
@@ -41,16 +37,26 @@ height: 450px;
 }
 
 .aboutMe {
+  display: flex;
   background-color: #ffffff;
   color: #666666;
-  text-align: center;
   line-height: 1.5em;
   font-size: 1.5em;
-  padding-bottom: 20px;
   font-weight: normal;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Raleway', sans-serif;
+
 }
 
-.introPage {
+.aboutMe p {
+  margin-top: 30px;
+  max-width: 650px;
+}
+
+.introPageContainer {
   height: 100vh;
   background-image: linear-gradient(
     rgba(20, 20, 20, 0.365), 
@@ -64,7 +70,11 @@ height: 450px;
   box-sizing: border-box;
   padding-top: 5%;
   font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .introPage p {
   padding-top: 40px;
   font-weight: 50;
@@ -72,20 +82,80 @@ height: 450px;
   line-height: 1.5em;
 }
 
-.socialMediaIcons {
-  padding-top: 240px;
-}
-
-div.socialMediaIcons > span {
-  margin-left: 25px;
-}
-
-.footer div.socialIcons {
-  background-color: #40A4C8;
+.introPage {
+  max-width: 60%;
+  align-self: center;
+  flex-grow: 0.2;
 }
 
 ul.navFooter a:hover {
   background-color: #262628;
   color: #40A4C8;
   border: 0 solid #262628;
+}
+
+div.socialMediaIcons > span {
+  margin-left: 25px;
+  flex-grow: 0.2;
+}
+
+.footer > a {
+  background-color: rgba(26,26,26,.75);
+  text-align: center;
+}
+
+.footerContainer {
+  background-color: #262628;
+  color: #ffffff;
+}
+
+.actionParagraph {
+  padding: 80px 0 50px 0;
+}
+
+.navigationItems {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: 100%;
+  font-family: Raleway, monospace; 
+}
+
+.navigationItems a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+  .navigationItems {
+      flex-flow: row;
+  }
+}
+
+@media (min-width: 500px) {
+  .navigationItems {
+      margin: 0;
+      display: flex;
+      height: 100%;
+      width: auto;
+      align-items: center;
+  }
+  
+  .navigationItems a {
+      color: #fff;
+      height: 100%;
+      padding: 16px 10px;
+      border-bottom: 4px solid transparent;
+  }
+  
+  .navigationItems a:hover,
+  .navigationItems a:active,
+  .navigationItems a.active {
+      background-color: rgba(5, 5, 5, 0.625);
+      border-bottom: 4px solid #40A4C8;
+      color: #fff;
+      padding-bottom: 2px;
+  }
 }

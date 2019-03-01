@@ -2,16 +2,14 @@ import React, { Component } from 'react'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience/Experience'
 import Project from './components/Projects'
-import Footer from './components/Navigation/Footer/Footer';
-import IntroPage from './components/Layout/IntroPage';
-import Toolbar from './components/Navigation/Toolbar/Toolbar';
+import Footer from './components/Navigation/Footer';
+import MainPage from './components/Layout/MainPage';
 
 class App extends Component {
   render () {
     return (
       <div className='app'>
-        <Toolbar />   
-        <IntroPage />
+        <MainPage />
         <AboutMe />
         <Project />
         <Experience />
