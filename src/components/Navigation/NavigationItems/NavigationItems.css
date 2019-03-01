@@ -1,0 +1,29 @@
+.NavigationItems {
+  margin: 0;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 100%;
+  font-family: Raleway, monospace; 
+}
+
+.NavigationItems a {
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 500px) {
+  
+  .NavigationItems a {
+      color: #fff;
+      height: 100%;
+      padding: 16px 10px;
+      border-bottom: 4px solid transparent;
+  }
+  
+  .NavigationItems a:hover{
+    color: #ffffff;
+    opacity: 0.2;
+  }
+} 
