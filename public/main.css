@@ -13,6 +13,10 @@ body {
   
 }
 
+a {
+  color: #ffffff;
+}
+
 .app {
   text-align: center;
 }
@@ -75,17 +79,48 @@ height: 450px;
   justify-content: space-evenly;
 }
 
-.introPage p {
+.introLine {
+  max-width: 60%;
+  align-self: center;
+  flex-grow: 0.2;
+}
+
+.introLine p {
   padding-top: 40px;
   font-weight: 50;
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
-.introPage {
-  max-width: 60%;
-  align-self: center;
-  flex-grow: 0.2;
+@media (max-width: 499px) {
+  .introPageContainer {
+    justify-content: space-evenly;
+  }
+  .introLine {
+    max-width: 350px;
+    align-self: left;
+    flex-grow: 0.2;
+  }
+  .introLine p {
+    font-weight: 20;
+    font-size: 23px;
+  }
+  .introLine h1 {
+    font-size: 30px;
+  }
+  .profileImg {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 40px;
+  }
+  
+}
+
+@media (min-width: 500px) {
+  div>img.profileImg{
+    display: none;
+  }
 }
 
 ul.navFooter a:hover {
@@ -100,7 +135,7 @@ div.socialMediaIcons > span {
 }
 
 .footer > a {
-  background-color: rgba(26,26,26,.75);
+  /* background-color: rgba(26,26,26,.75); */
   text-align: center;
 }
 
@@ -113,49 +148,31 @@ div.socialMediaIcons > span {
   padding: 80px 0 50px 0;
 }
 
-.navigationItems {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  height: 100%;
-  font-family: Raleway, monospace; 
-}
-
-.navigationItems a {
-  color: #fff;
-  text-decoration: none;
+.backdrop {
   width: 100%;
-  box-sizing: border-box;
+  height: 100%;
+  z-index: 100; 
+  left: 0; 
+  top: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5)
 }
+/* show navigation menu items in block layout when sideDrawer component
+is open */
+@media (max-width: 499px) {
+  div nav ul.navigationItems{
+    flex-flow: column;
+    align-self: flex-start;
+    text-align: left;
+    font-family: Raleway, monospace; 
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 
-@media (min-width: 500px) {
-  .navigationItems {
-      flex-flow: row;
+  .navigationItems a{
+    padding: 10px 0 10px 10px;
   }
-}
-
-@media (min-width: 500px) {
-  .navigationItems {
-      margin: 0;
-      display: flex;
-      height: 100%;
-      width: auto;
-      align-items: center;
-  }
-  
-  .navigationItems a {
-      color: #fff;
-      height: 100%;
-      padding: 16px 10px;
-      border-bottom: 4px solid transparent;
-  }
-  
-  .navigationItems a:hover,
-  .navigationItems a:active,
-  .navigationItems a.active {
-      background-color: rgba(5, 5, 5, 0.625);
-      border-bottom: 4px solid #40A4C8;
-      color: #fff;
-      padding-bottom: 2px;
+  .navigationItems a:hover {
+    opacity: 0.2;
   }
 }
