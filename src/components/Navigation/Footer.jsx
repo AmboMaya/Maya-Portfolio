@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationItems from './NavigationItems';
+import NavigationItems from './NavigationItems/NavigationItems';
 import SocialMediaIcons from '../Layout/SocialMediaIcons';
 
 const Footer = () => (
