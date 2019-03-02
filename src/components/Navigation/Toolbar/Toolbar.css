@@ -4,19 +4,21 @@
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: flex-end; 
-  /* justify-content: space-between;  */
+  justify-content: flex-start; 
   align-items: center;
-  padding: 0 50px;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 90;
 }
 
-.hamburgerMenu{
-  align-content: flex-start; 
-}
-.Toolbar nav {
+header nav {
   height: 100%;
+  margin-left: auto;
+}
+
+header div {
+  justify-content: flex-start;
+  /* padding: 0; */
 }
 
 @media (max-width: 499px) {
@@ -28,5 +30,8 @@
 @media (min-width: 499px) {
   div.hamburgerMenu {
       display: none;
+  }
+  .Toolbar {
+    padding-left: 0;
   }
 }
