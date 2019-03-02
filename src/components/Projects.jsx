@@ -23,6 +23,10 @@ const Projects = () => {
   return (
     <React.Fragment>
       <div className='projects'>
+        <div className='projectHeadline'>
+          <h1>Projects I've worked on</h1>
+        </div>
+        
         {projects.map(project => (
           <Placeholder key={project.title} title={project.title} image={project.image} description={project.projectDescription}/>
         ))}
