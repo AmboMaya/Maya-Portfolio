@@ -191,8 +191,8 @@ ul.navFooter a:hover {
 }
 
 div.socialMediaIcons > span {
-  margin-left: 25px;
-  flex-grow: 0.2;
+  margin-left: 15px;
+
 }
 
 .footer > a {
@@ -229,7 +229,6 @@ is open */
     font-size: 1.5em;
     font-weight: bold;
   }
-
   .navigationItems a{
     padding: 10px 0 10px 10px;
   }
