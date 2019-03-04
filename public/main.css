@@ -14,13 +14,6 @@ body {
   overflow-y: scroll;
 }
 
-/* @media (max-width: 499px) {
-  body {
-  width: 100%;
-  width: calc(100% + 1%);
-  }
-} */
-
 a {
   color: #ffffff;
 }
@@ -39,6 +32,11 @@ a {
   color: black;
 }
 
+div.socialMediaIcons > span {
+  margin-left: 15px;
+}
+
+/* Start of main Page component fullscreen and responsive design up to line 100 */
 .introPageContainer {
   height: 100vh;
   background-image: linear-gradient(
@@ -104,7 +102,9 @@ a {
     display: none;
   }
 }
+/* end of Main Page component styling */
 
+/* Start of About component stlying  up to line 141*/
 .aboutMe {
   display: flex;
   background-color: #ffffff;
@@ -133,7 +133,6 @@ a {
     padding-top: 20px;
     text-align: justify;
   }
-
   .aboutMe h1 {
     font-size: 25px;
     font-weight: bold;
@@ -143,7 +142,9 @@ a {
     padding: 30px 0 30px 0;
   }
 }
+/* end of Main Page component styling */
 
+/* Start of Projects component end in line 225 */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -224,21 +225,11 @@ a {
     color: black;
     justify-content: space-between;
     margin:auto;
-  }
-  
+  }  
 }
+/* end of Main Page component styling */
 
-ul.navFooter a:hover {
-  background-color: #262628;
-  color: #40A4C8;
-  border: 0 solid #262628;
-}
-
-div.socialMediaIcons > span {
-  margin-left: 15px;
-
-}
-
+/* Experience section component end in line 297 */
 .resumeContainer {
   display: flex;
   justify-content: space-around;
@@ -307,7 +298,13 @@ div.socialMediaIcons > span {
   .workExperienceContainer h1:first-child, .educationContainer h1:first-child {
     width: 100%;
   }
+}
 
+/* Start of Footer component stlying, end in line 322*/
+ul.navFooter a:hover {
+  background-color: #262628;
+  color: #40A4C8;
+  border: 0 solid #262628;
 }
 
 .footer > a {
@@ -322,6 +319,8 @@ div.socialMediaIcons > span {
 .actionParagraph {
   padding: 80px 0 50px 0;
 }
+/* end of Footer styling */
+
 
 .backdrop {
   width: 100%;
