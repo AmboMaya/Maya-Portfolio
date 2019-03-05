@@ -9,45 +9,35 @@ import SideDrawer from './components/Navigation/SideDrawer/SideDrawer';
 
 
 class App extends Component {
-  state = {
-    showSideDrawer: false
-  }
+	state = {
+	showSideDrawer: false
+	}
 
-  sideDrawerClosedHandler = () => {
-      this.setState( { showSideDrawer: false } );
-  }
+	sideDrawerClosedHandler = () => {
+		this.setState( { showSideDrawer: false } );
+	}
 
-  sideDrawerToggleHandler = () => {
-      this.setState( ( prevState ) => {
-          return { showSideDrawer: !prevState.showSideDrawer };
-      } );
-  }
+	sideDrawerToggleHandler = () => {
+		this.setState( ( prevState ) => {
+			return { showSideDrawer: !prevState.showSideDrawer };
+		} );
+	}
 
-  render () {
-    return (
-      <div className='app'>
-        <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
-        <SideDrawer
-            open={this.state.showSideDrawer}
-            closed={this.sideDrawerClosedHandler} />
-        <MainPage />
-        <AboutMe />
-        <Project />
-        <Experience />
-        <Footer />
-      </div>
-      //when use code below only some components render to the page
-      // <Router>
-      // <div className={classes.App}>
-      //     <Route path='/' component={Layout} />
-      //     <Route path='#/aboutme' component={AboutMe} />
-      //     <Route path='#/projects' component={Project} />
-      //     <Route path='#/experience' component={Experience} />
-      //   <Footer />
-      // </div>
-      // </Router>
-    )
-  }
+	render () {
+		return (
+			<div className='app'>
+				<Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+				<SideDrawer
+					open={this.state.showSideDrawer}
+					closed={this.sideDrawerClosedHandler} />
+				<MainPage />
+				<AboutMe />
+				<Project />
+				<Experience />
+				<Footer />
+			</div>
+		)
+	}
 }
 
 export default App

@@ -1,18 +1,18 @@
 .Experience {
-  color: #000000;
-  text-align: left;
-  padding: 50px 50px 0 50px;
-  background-color: #edeeef;
-  font-size: 16px;
-  letter-spacing: 0em;
-  line-height: 1.8em
+	color: #000000;
+	text-align: left;
+	padding: 50px 50px 0 50px;
+	background-color: #edeeef;
+	font-size: 16px;
+	letter-spacing: 0em;
+	line-height: 1.8em
 }
 
 ul.list {
-  padding-top: 15px;
+	padding-top: 15px;
 }
 
 .headline {
-  font-weight: bold;
-  color: #000000
+	font-weight: bold;
+	color: #000000
 }

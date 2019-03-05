@@ -1,12 +1,12 @@
 import React from 'react'
-import NavigationItems from '../NavigationItems/NavigationItems';
-import classes from './SideDrawer.css';
-import Backdrop from '../../UI/Backdrop';
+import NavigationItems from '../NavigationItems/NavigationItems'
+import classes from './SideDrawer.css'
+import Backdrop from '../../UI/Backdrop'
 
 const SideDrawer = ( props ) => {
-    let attachedClasses = [classes.SideDrawer, classes.Close];
+    let attachedClasses = [classes.SideDrawer, classes.Close]
     if (props.open) {
-        attachedClasses = [classes.SideDrawer, classes.Open];
+        attachedClasses = [classes.SideDrawer, classes.Open]
     }
     return (
         <React.Fragment>
@@ -17,7 +17,7 @@ const SideDrawer = ( props ) => {
                 </nav>
             </div>
         </React.Fragment>
-    );
-};
+    )
+}
 
-export default SideDrawer;
+export default SideDrawer

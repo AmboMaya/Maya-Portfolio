@@ -4,11 +4,11 @@ import SocialMediaIcons from '../Layout/SocialMediaIcons'
 
 const Footer = () => (
   <div className='footerContainer'>
-    <div className='actionParagraph'>
-      <h2>I would love to work with you. Please get in touch.</h2>
-    </div>
-    <NavigationItems />
-    <SocialMediaIcons />
+		<div className='actionParagraph'>
+    		<h2>I would love to work with you. Please get in touch.</h2>
+    	</div>
+    	<NavigationItems />
+    	<SocialMediaIcons />
   </div>  
 )
 
