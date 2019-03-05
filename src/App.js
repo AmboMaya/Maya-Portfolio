@@ -1,25 +1,43 @@
 import React, { Component } from 'react'
-import classes from './App.css'
-import AboutMe from './components/AboutMe/AboutMe'
+import AboutMe from './components/AboutMe'
 import Experience from './components/Experience/Experience'
-import Project from './components/Projects/Projects'
-import Footer from './components/Navigation/Footer/Footer';
-import LandingPage from './components/Layout/LandingPage/LandingPage';
-import Toolbar from './components/Navigation/Toolbar/Toolbar';
+import Project from './components/Projects'
+import Footer from './components/Navigation/Footer';
+import MainPage from './components/Layout/MainPage';
+import Toolbar from '../src/components/Navigation/Toolbar/Toolbar';
+import SideDrawer from './components/Navigation/SideDrawer/SideDrawer';
+
 
 class App extends Component {
-  render () {
-    return (
-      <div className={classes.App}>
-        <Toolbar />   
-        <LandingPage />
-        <AboutMe />
-        <Project />
-        <Experience />
-        <Footer />
-      </div>
-    )
-  }
+	state = {
+	showSideDrawer: false
+	}
+
+	sideDrawerClosedHandler = () => {
+		this.setState( { showSideDrawer: false } );
+	}
+
+	sideDrawerToggleHandler = () => {
+		this.setState( ( prevState ) => {
+			return { showSideDrawer: !prevState.showSideDrawer };
+		} );
+	}
+
+	render () {
+		return (
+			<div className='app'>
+				<Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
+				<SideDrawer
+					open={this.state.showSideDrawer}
+					closed={this.sideDrawerClosedHandler} />
+				<MainPage />
+				<AboutMe />
+				<Project />
+				<Experience />
+				<Footer />
+			</div>
+		)
+	}
 }
 
 export default App

@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import classes from './Toolbar.css'
 import NavigationItems from '../NavigationItems/NavigationItems'
-// import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle'
+import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle'
 
-const Toolbar = ( props ) => (
-    <header className={classes.Toolbar}>
-        {/* <DrawerToggle clicked={props.drawerToggleClicked} /> */}
-        <nav>
-            <NavigationItems />
-        </nav>
-    </header>
-);
-
-export default Toolbar
+export default class Toolbar extends Component {
+   
+    render() {
+        return (
+        <header className={`${classes.Toolbar} toolbar`}>
+            <div className={classes.hamburgerMenu}>
+                <DrawerToggle clicked={this.props.drawerToggleClicked} />
+            </div>
+            <nav className={classes.DesktopOnly}>
+                <NavigationItems />
+            </nav>
+        </header>
+        )
+    }
+}

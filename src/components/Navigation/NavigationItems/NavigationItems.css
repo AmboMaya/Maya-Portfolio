@@ -1,15 +1,29 @@
 .NavigationItems {
-    padding: 0;
-    list-style: none;
+    margin: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
+    align-items: center;
     height: 100%;
-    justify-content: flex-end;
-    font-family: Raleway, monospace;
+    font-family: Raleway, monospace; 
+}
+
+.NavigationItems a {
+	text-decoration: none;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 @media (min-width: 500px) {
-    .NavigationItems {
-        flex-flow: row;
-    }
-}
+
+  .NavigationItems a {
+      color: #fff;
+      height: 100%;
+      padding: 16px 10px;
+      border-bottom: 4px solid transparent;
+  }
+  
+  .NavigationItems a:hover{
+    color: #ffffff;
+    opacity: 0.2;
+  }
+} 
