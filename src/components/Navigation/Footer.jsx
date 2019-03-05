@@ -9,6 +9,7 @@ const Footer = () => (
     	</div>
     	<NavigationItems />
     	<SocialMediaIcons />
+		<p style={{paddingTop: 10, opacity: 0.3}}>&copy; 2019 AmboMaya. All Rights Reserved.</p>
   </div>  
 )
 
