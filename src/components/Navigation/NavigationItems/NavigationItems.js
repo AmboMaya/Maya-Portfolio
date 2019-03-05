@@ -1,18 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import IntroPage from '../../Layout/IntroPage'
-import Experience from '../../Experience/Experience'
-import AboutMe from '../../AboutMe';
+import { Link } from 'react-scroll'
 import classes from '../NavigationItems/NavigationItems.css'
 
-const NavigationItems = () => (
+const NavigationItems = (props) => (
     <ul className={`${classes.NavigationItems} navigationItems`}>
-        <Link component={IntroPage} to={"/"}>Home</Link>     
-        <Link component={Experience} to="/experience">Experience</Link>
-        <Link component={AboutMe} to="/aboutme">About</Link>
-        <Link component={Experience} to="/portfolio">Portfolio</Link>
+        <Link to='target1' smooth={true} duration={700} offset={-200}>Home</Link>
+        <Link to='target2' smooth={true} duration={700} offset={0}>Experience</Link>
+        <Link to='target3' smooth={true} duration={700} offset={-280}>About</Link>
+        <Link to='target4' smooth={true} duration={700} offset={-10}>Portfolio</Link>
     </ul> 
-
-);
+)
 
 export default NavigationItems
