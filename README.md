@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Build with React.js
 
-My personal website and online CV: ambomaya.com
+My personal website and online CV: [http://ambomaya.com]
 
 Build Setup
 # install dependencies
