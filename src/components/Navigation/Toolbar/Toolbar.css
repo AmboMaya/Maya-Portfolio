@@ -28,9 +28,6 @@ header div {
 
 @media (min-width: 499px) {
   div.hamburgerMenu {
-      display: none;
-  }
-  .Toolbar {
-    padding-left: 0;
+    display: none;
   }
 }

@@ -8,7 +8,7 @@ export default class Toolbar extends Component {
    
     render() {
         return (
-        <header className={classes.Toolbar}>
+        <header className={`${classes.Toolbar} toolbar`}>
             <div className={classes.hamburgerMenu}>
                 <DrawerToggle clicked={this.props.drawerToggleClicked} />
             </div>
