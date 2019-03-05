@@ -1,6 +1,6 @@
 import React from 'react'
-import NavigationItems from './NavigationItems/NavigationItems';
-import SocialMediaIcons from '../Layout/SocialMediaIcons';
+import NavigationItems from './NavigationItems/NavigationItems'
+import SocialMediaIcons from '../Layout/SocialMediaIcons'
 
 const Footer = () => (
   <div className='footerContainer'>

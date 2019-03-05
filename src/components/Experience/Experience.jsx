@@ -1,4 +1,6 @@
 import React from 'react'
+import { Element } from 'react-scroll'
+
 // import PropTypes from 'prop-types';
 // import { withStyles } from '@material-ui/core/styles';
 // import Grid from '@material-ui/core/Grid';
@@ -30,7 +32,9 @@ const Experience = (props) => {
     <React.Fragment>
       <div className='resumeContainer'>
         <div className='technologies'>
-          <h1 className='heading'>Technologies</h1>
+          <Element name='target2'>
+            <h1 className='heading'>Technologies</h1>
+          </Element>  
           <div className='technologyList'>
             <h4 className='heading'>Day-to-Day Comfort</h4>
             <ul>
