@@ -12,7 +12,7 @@ const projects = [
 	{
 	title: 'Mood',
 	url: 'https://kowhai-fp.herokuapp.com/',
-	image: '/images/Mood2.png',
+	image: '/images/mood2.png',
 	projectDescription: "Mood records one's daily emotional state and reflect it in graphical data. This is a final team project at EDA."
 	},
 	{
