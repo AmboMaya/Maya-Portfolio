@@ -79,6 +79,13 @@ div.socialMediaIcons a {
   flex-grow: 0.2;
 }
 
+a.callToAction {
+  text-decoration: none;
+  color: #ffffff;
+}
+a.callToAction:hover {
+  opacity: 0.3;
+}
 .introLine p {
   padding: 40px 5px;
   font-weight: 50;
