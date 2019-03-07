@@ -30,9 +30,11 @@ const Projects = () => {
 				<div className='projectHeadline'>
 					<Element name='target4'><h1>Projects I've worked on</h1></Element>
 				</div>
-				{projects.map(project => (
-					<Placeholder key={project.title} title={project.title} image={project.image} description={project.projectDescription} url={project.url}/>
-				))}
+				<div className='projectsContainer'>
+					{projects.map(project => (
+						<Placeholder key={project.title} title={project.title} image={project.image} description={project.projectDescription} url={project.url}/>
+					))}
+				</div>
 			</div>
 		</React.Fragment>
 	)
