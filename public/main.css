@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 16px;
   color: #ffffff;
   line-height: 1.5em;
-  width: calc(100% + 15px);
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .app {
@@ -66,7 +67,7 @@ div.socialMediaIcons a {
   line-height: 1.5em;  
   overflow: hidden;
   box-sizing: border-box;
-  padding-top: 5%;
+  padding-top: 30px;
   font-family: 'Varela Round', sans-serif;
   display: flex;
   flex-direction: column;
@@ -87,7 +88,8 @@ a.callToAction:hover {
   opacity: 0.3;
 }
 .introLine p {
-  padding: 40px 5px;
+  margin-top: 10px;
+  padding: 20px;
   font-weight: 50;
   font-size: 1.5em;
   line-height: 1.5em;
@@ -116,17 +118,17 @@ a.callToAction:hover {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    margin-top: 40px;
   }
-  .toolbar {
-    background-color: #211e60;
-    box-shadow: 5px;
-    border-radius: 5px;
-    border: 2px solid #211e60;
-  }
-  .drawerToggle {
-    padding: 20px;
-  }
+}
+
+.sideDrawerClosedIcon {
+  text-align: right;
+  padding-left: 20px;
+}
+
+.sideDrawerClosedIcon i {
+  font-size: 20px;
+  padding: 20px 20px 0 0;
 }
 
 @media (min-width: 499px) {
@@ -184,7 +186,6 @@ a.callToAction:hover {
   height: 500px;
   justify-content: space-evenly;
   flex-direction: row;
-  overflow-y: scroll;
 }
 
 .projectHeadline {
@@ -252,8 +253,8 @@ a.callToAction:hover {
   .projects {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow-y: scroll;
-    height: 470px;
+    /* overflow-y: scroll; */
+    height: 100%;
   }
   .projectContainer {
     justify-content: space-evenly;
@@ -313,7 +314,7 @@ a.callToAction:hover {
     flex-direction: column;
     padding: 0; 
   }
-  .technologyList, .workExperienceList, .educationList {
+  .technologyList, .workExperienceList {
     width: 100vw;
     align-items: flex-start;
     padding: 0;
@@ -338,41 +339,45 @@ a.callToAction:hover {
   background-color: #262628;
   color: #ffffff;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  align-content: center;
+  align-content: space-evenly;
   padding: 50px;
-  justify-content: space-between;
 }
 
 .footerContainer ul:nth-child(2) {
-  width: 30%;
-  padding: 0;
-  align-self: center;
+  width: 350px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
 }
 
 .actionParagraph {
   font-family: 'Varela Round', sans-serif;
+  padding: 20px 0;
 }
 
 @media (max-width: 499px) {
-  .footerContainer ul:nth-child(2) {
+  /* .footerContainer ul:nth-child(2) {
     width: 50%;
     align-self: flex-start;
-    margin-left: 40px;
-  }
+  } */
   .footerContainer {
-    align-content: space-between;
+    align-items: stretch;
     padding: 30px 0;
     height: 200px;
+    justify-content: space-around;
+    align-content: space-between;
   }
   .actionParagraph {
-    font-size: 15px;
-    line-height: 1.5em;
+    font-size: 12px;
   }
-  div.socialMediaIcons > span {
+  div.socialMediaIcons > i {
     margin: 0;
-    padding: 10px 0 0 5px;
-    font-size: 10px;
+    padding: 10px;
+    font-size: 6px;
   }
 }
 /* end of Footer styling */
@@ -390,17 +395,28 @@ a.callToAction:hover {
 is open */
 @media (max-width: 499px) {
   div nav ul.navigationItems{
-    flex-flow: column;
-    align-self: flex-start;
-    text-align: left;
     font-family: Raleway, monospace; 
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+  div nav ul.sideDrawerNav{
+    width: 200px;
+    height: 300px;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+    padding: 0 0 0 25px;
     font-size: 1.5em;
-    font-weight: bold;
   }
-  .navigationItems a{
-    padding: 10px 0 10px 10px;
-  }
-  .navigationItems a:hover {
+
+  /* .navigationItems a:hover {
     opacity: 0.2;
-  }
+  } */
+   /* .NavigationItems a {
+      color: #fff;
+      height: 100%;
+      padding: 16px 10px;
+      border-bottom: 4px solid transparent;
+  } */
 }
