@@ -4,12 +4,10 @@ import SocialMediaIcons from '../Layout/SocialMediaIcons'
 
 const Footer = () => (
 	<div className='footerContainer'>
-		<div className='actionParagraph'>
-			<h2>I would love to work with you. Please get in touch.</h2>
-    	</div>
+		{/* <h2 className='actionParagraph'>I would love to work with you. <br/> Please get in touch.</h2> */}
     	<NavigationItems />
     	<SocialMediaIcons />
-		<p style={{paddingTop: 10, opacity: 0.3}}>&copy; 2019 AmboMaya. All Rights Reserved.</p>
+		<p style={{fontSize: 10, 	paddingTop: 10, opacity: 0.3}}>&copy; 2019 AmboMaya. All Rights Reserved.</p>
   	</div>  
 )
 
