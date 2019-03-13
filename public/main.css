@@ -84,9 +84,11 @@ a.callToAction {
 	text-decoration: none;
 	color: #ffffff;
 }
+
 a.callToAction:hover {
   	opacity: 0.3;
 }
+
 .introLine p {
 	margin-top: 10px;
 	padding: 20px;
@@ -184,7 +186,7 @@ a.callToAction:hover {
 	display: flex;
 	flex-wrap: wrap;
 	background-color:#2d143d;
-	height: 500px;
+	height: auto;
 	justify-content: space-evenly;
 	flex-direction: row;
 }
@@ -328,6 +330,13 @@ a.callToAction:hover {
 	}
 	.workExperienceContainer h1:first-child, .educationContainer h1:first-child {
 		width: 100%;
+	}
+}
+
+@media (max-width: 645px) {
+	.educationContainer div:nth-child(2) {
+		padding: 0;
+		width: 100vw;
 	}
 }
 
