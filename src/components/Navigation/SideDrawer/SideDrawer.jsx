@@ -12,7 +12,10 @@ const SideDrawer = ( props ) => {
         <React.Fragment>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
-                <nav>
+                <div className='sideDrawerClosedIcon' onClick={props.closed}>        
+                    <i className="far fa-times-circle fa-2x"></i>
+                </div>
+                <nav> 
                     <NavigationItems />
                 </nav>
             </div>

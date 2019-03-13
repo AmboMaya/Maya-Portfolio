@@ -1,29 +1,30 @@
 .NavigationItems {
-    margin: 0;
     display: flex;
     flex-flow: row;
-    align-items: center;
     height: 100%;
     font-family: Raleway, monospace; 
+    justify-content: space-around;
 }
 
 .NavigationItems a {
 	text-decoration: none;
-	width: 100%;
 	box-sizing: border-box;
+	align-self: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 17px;
+	padding: 0 20px 0 20px;
 }
 
-@media (min-width: 500px) {
+.NavigationItems a:hover {
+  	opacity: 0.2;
+}
 
-  .NavigationItems a {
-      color: #fff;
-      height: 100%;
-      padding: 16px 10px;
-      border-bottom: 4px solid transparent;
-  }
-  
-  .NavigationItems a:hover{
-    color: #ffffff;
-    opacity: 0.2;
-  }
-} 
+@media (max-width: 499px) {
+	.NavigationItems a {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		padding: 0 10px 0 10px;
+	}	
+}
