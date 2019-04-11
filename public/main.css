@@ -8,10 +8,13 @@ html, body {
   	overflow-x: hidden;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 200;
-	font-size: 16px;
 	color: #ffffff;
 	line-height: 1.5em;
 }
@@ -92,7 +95,7 @@ a.callToAction:hover {
 .introLine p {
 	margin-top: 10px;
 	padding: 20px;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	line-height: 1.5em;
 	letter-spacing: -0.5px;
 }
@@ -108,12 +111,12 @@ a.callToAction:hover {
 		padding-top: 20px;
 	}
 	.introLine h1 {
-		font-size: 30px;
+		font-size: 3rem;
 		padding-top: 15px;
 	}
 	.introLine p {
 		font-weight: 20;
-		font-size: 23px;
+		font-size: 2.30rem;
 		padding-top: 25px;
 		line-height: 1.2em;
 	}
@@ -130,7 +133,7 @@ a.callToAction:hover {
 }
 
 .sideDrawerClosedIcon i {
-	font-size: 20px;
+	font-size: 2rem;
 	padding: 20px 20px 0 0;
 }
 
@@ -147,7 +150,7 @@ a.callToAction:hover {
 	background-color: #ffffff;
 	color: #666666;
 	line-height: 1.5em;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: normal;
 	box-sizing: border-box;
 	flex-direction: column;
@@ -164,14 +167,14 @@ a.callToAction:hover {
 @media (max-width: 499px) {
 	.aboutMe p {
 		max-width: 350px;
-		font-size: 20px;
+		font-size: 2rem;
 		line-height: 30px;
 		margin: 0;
 		padding-top: 20px;
 		text-align: justify;
 	}
 	.aboutMe h1 {
-		font-size: 25px;
+		font-size: 2.5rem;
 		font-weight: bold;
 		margin: 0;
 	}
@@ -210,24 +213,33 @@ a.callToAction:hover {
 	width: 350px;
 	height: 350px;
 	margin: 20px;
+	position: relative;
 }
 
 .projectsContainer{
-	width: 100%;
+	max-width: 1190px;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
+
+.projectsContainer::after {
+	content: '';
+	flex: auto;
+}
+
 .cardContainer {
 	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
+	font-size: 1.3rem;
 	color: #666666;
+	padding-top: 5px;
 	border-radius: 5px;
 	background-color: #ffffff;
  }
 
 .cardContainer p {  
-  	padding-top: 7px; 
+	  padding-top: 7px; 
+	  line-height: 1.5rem;
 }
 
 .cardContainer h3 {  
@@ -240,7 +252,7 @@ a.callToAction:hover {
 }
 
 .cardContainer a {
-	color: #666666;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -259,6 +271,47 @@ a.callToAction:hover {
 	.projectContainer {
 		justify-content: space-evenly;
 	}
+}
+
+.overlay-bg {
+	position: relative;
+	width: 100%;
+   }
+
+.overlay-bg .hover {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.overlay-bg:hover .hover {
+	opacity: 1;
+}
+
+.overlay-bg .normal{
+	transition: .5s ease;
+}
+
+.overlay-bg .hover {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	color: #ffffff;
+}
+
+.overlay-bg .text {
+	color: #ffffff !important;
+	font-size: 2.5rem;
+	line-height: 1.5em;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 /* end of Main Page component styling */
 
@@ -401,5 +454,11 @@ is open */
 		text-align: left;
 		padding: 0 0 0 25px;
 		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1191px), (max-width: 1169px) {
+	.projectsContainer {
+		max-width: 800px;
 	}
 }
